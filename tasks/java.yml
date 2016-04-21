@@ -1,0 +1,8 @@
+---
+#- name: set java architecture
+#  set_fact:
+#    jdk_arch: "{{ 'i586' if ansible_architecture == 'i386' else 'x64'}}"
+
+- name: install java devel
+  yum: name=java-{{ java.version }}-openjdk-devel
+  sudo: yes

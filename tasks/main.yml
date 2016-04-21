@@ -1,0 +1,6 @@
+---
+- include: java.yml
+  tags: [java]
+
+- include: gradle.yml
+  tags: [gradle]
